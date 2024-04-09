@@ -13,7 +13,7 @@ if (tree == NULL)
 {
 return (0);
 }
-if (tree->left != NULL || tree-> right != NULL)
+if (tree->left != NULL || tree->right != NULL)
 {
 c = 1;
 }
