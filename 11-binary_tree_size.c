@@ -13,5 +13,5 @@ if (tree == NULL)
 return (0);
 }
 else
-return(binary_tree_size(node->left) + 1 + binary_tree(node->right));
+return(binary_tree_size(tree->left) + 1 + binary_tree(tree->right));
 }
