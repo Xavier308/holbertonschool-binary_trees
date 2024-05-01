@@ -2,9 +2,8 @@
 
 ## Master Project
 
-### By: Alexandre Gautier  
-### Team Members: Xavier Cruz, William Pellot, John Lopez Cabrera, Steven Rosario  
-### Weight: 5  
+### Project Design: Alexandre Gautier
+### Implemented by: Xavier J Cruz, William Pellot, John Lopez Cabrera, Steven Rosario  
 
 ---
 
@@ -64,94 +63,113 @@ typedef struct binary_tree_s binary_tree_t;
 
 ## Binary Search Tree
 
-```shell
+```c
 typedef struct binary_tree_s bst_t;
 ```
 ## AVL Tree
 
-```shell
+```c
 typedef struct binary_tree_s avl_t;
 
 ```
 ## Max Binary Heap
 
-```shell
+```c
 typedef struct binary_tree_s heap_t;
 ```
 ## Tasks
 
 ### 0. New Node
--Function: binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
--Description: Creates a new binary tree node.
+- Function: binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+
+- Description: Creates a new binary tree node.
 
 ### 1. Insert Left
--Function: binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
--Description: Inserts a node as the left child of another node.
+- Function: binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+
+- Description: Inserts a node as the left child of another node.
  
 ### 2. Insert Right
--Function: binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
--Description: Inserts a node as the right child of another node.
+- Function: binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+
+- Description: Inserts a node as the right child of another node.
  
 ### 3. Delete
--Function: void binary_tree_delete(binary_tree_t *tree);
--Description: Deletes an entire binary tree.
+- Function: void binary_tree_delete(binary_tree_t *tree);
+
+- Description: Deletes an entire binary tree.
  
 ### 4. Is Leaf
--Function: int binary_tree_is_leaf(const binary_tree_t *node);
--Description: Checks if a node is a leaf.
+- Function: int binary_tree_is_leaf(const binary_tree_t *node);
+
+- Description: Checks if a node is a leaf.
  
 ### 5. Is Root
--Function: int binary_tree_is_root(const binary_tree_t *node);
--Description: Checks if a given node is a root.
+- Function: int binary_tree_is_root(const binary_tree_t *node);
+
+- Description: Checks if a given node is a root.
  
 ### 6. Pre-order Traversal
--Function: void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
--Description: Goes through a binary tree using pre-order traversal.
+- Function: void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+
+- Description: Goes through a binary tree using pre-order traversal.
  
 ### 7. In-order Traversal
--Function: void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
--Description: Goes through a binary tree using in-order traversal.
+- Function: void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+
+- Description: Goes through a binary tree using in-order traversal.
  
 ### 8. Post-order Traversal
--Function: void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
--Description: Goes through a binary tree using post-order traversal.
+- Function: void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+
+- Description: Goes through a binary tree using post-order traversal.
  
 ### 9. Height
--Function: size_t binary_tree_height(const binary_tree_t *tree);
--Description: Measures the height of a binary tree.
+- Function: size_t binary_tree_height(const binary_tree_t *tree);
+
+- Description: Measures the height of a binary tree.
  
 ### 10. Depth
--Function: size_t binary_tree_depth(const binary_tree_t *tree);
--Description: Measures the depth of a node in a binary tree.
+- Function: size_t binary_tree_depth(const binary_tree_t *tree);
+
+- Description: Measures the depth of a node in a binary tree.
  
 ### 11. Size
--Function: size_t binary_tree_size(const binary_tree_t *tree);
--Description: Measures the size of a binary tree.
+- Function: size_t binary_tree_size(const binary_tree_t *tree);
+
+- Description: Measures the size of a binary tree.
  
 ### 12. Leaves
--Function: size_t binary_tree_leaves(const binary_tree_t *tree);
--Description: Counts the leaves in a binary tree.
+- Function: size_t binary_tree_leaves(const binary_tree_t *tree);
+
+- Description: Counts the leaves in a binary tree.
  
 ### 13. Nodes
--Function: size_t binary_tree_nodes(const binary_tree_t *tree);
--Description: Counts the nodes with at least one child in a binary tree.
+- Function: size_t binary_tree_nodes(const binary_tree_t *tree);
+
+- Description: Counts the nodes with at least one child in a binary tree.
  
 ### 14. Balance Factor
--Function: int binary_tree_balance(const binary_tree_t *tree);
--Description: Measures the balance factor of a binary tree.
+- Function: int binary_tree_balance(const binary_tree_t *tree);
+
+- Description: Measures the balance factor of a binary tree.
  
 ### 15. Is Full
--Function: int binary_tree_is_full(const binary_tree_t *tree);
--Description: Checks if a binary tree is full.
+- Function: int binary_tree_is_full(const binary_tree_t *tree);
+
+- Description: Checks if a binary tree is full.
  
 ### 16. Is Perfect
--Function: int binary_tree_is_perfect(const binary_tree_t *tree);
--Description: Checks if a binary tree is perfect.
+- Function: int binary_tree_is_perfect(const binary_tree_t *tree);
+
+- Description: Checks if a binary tree is perfect.
  
 ### 17. Sibling
--Function: binary_tree_t *binary_tree_sibling(binary_tree_t *node);
--Description: Finds the sibling of a node.
+- Function: binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+
+- Description: Finds the sibling of a node.
  
 ### 18. Uncle
--Function: binary_tree_t *binary_tree_uncle(binary_tree_t *node);
--Description: Finds the uncle of a node.
+- Function: binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+
+- Description: Finds the uncle of a node.
